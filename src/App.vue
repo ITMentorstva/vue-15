@@ -1,12 +1,16 @@
 <template>
-  <p>TEst</p>
+  <MainComponent name="Toma"></MainComponent>
+  <LoginComponent></LoginComponent>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import MainComponent from "@/Components/MainComponent.vue";
+import LoginComponent from "@/Components/LoginComponent.vue";
 
 export default defineComponent({
   name: 'App',
+  components: {LoginComponent, MainComponent},
 });
 </script>
 
